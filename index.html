@@ -1,124 +1,215 @@
-<!doctype html>
-<html lang="en">
+    <!doctype html>
+    <html lang="pt-br">
 
-    <head>
-        <meta charset="utf-8">
+        <head>
+            <meta charset="utf-8">
 
-        <title>Minicurso Git</title>
+            <title>Minicurso Git</title>
 
-        <meta name="description" content="Apresentação do minicurso de Git ministrado na SATI 2014">
-        <meta name="author" content="Diogo Gonçalves">
+            <meta name="description" content="Apresentação do minicurso de Git ministrado na SATI 2014">
+            <meta name="author" content="Diogo Gonçalves">
 
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+            <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <link rel="stylesheet" href="css/reveal.min.css">
-        <link rel="stylesheet" href="css/theme/custom.css" id="theme">
+            <link rel="stylesheet" href="css/reveal.min.css">
+            <link rel="stylesheet" href="css/theme/custom.css" id="theme">
 
-        <link rel="stylesheet" href="lib/css/zenburn.css">
+            <link rel="stylesheet" href="lib/css/zenburn.css">
 
-        <script>
-            if( window.location.search.match( /print-pdf/gi ) ) {
-                var link = document.createElement( 'link' );
-                link.rel = 'stylesheet';
-                link.type = 'text/css';
-                link.href = 'css/print/pdf.css';
-                document.getElementsByTagName( 'head' )[0].appendChild( link );
-            }
-        </script>
+            <script>
+                if( window.location.search.match( /print-pdf/gi ) ) {
+                    var link = document.createElement( 'link' );
+                    link.rel = 'stylesheet';
+                    link.type = 'text/css';
+                    link.href = 'css/print/pdf.css';
+                    document.getElementsByTagName( 'head' )[0].appendChild( link );
+                }
+            </script>
 
-    </head>
+        </head>
 
-    <body>
+        <body>
 
-        <img src="images/logos/Git-Icon.png"
-            style="width: 60px; height: 60px; position: fixed; left: 20px; bottom: 20px;">
+            <img src="images/logos/Git-Icon.png"
+                style="width: 60px; height: 60px; position: fixed; left: 20px; bottom: 20px;">
 
-        <img src="images/logos/github-icon.png"
-            style="width: 60px; height: 60px; position: fixed; left: 90px; bottom: 20px;">
+            <img src="images/logos/github-icon.png"
+                style="width: 60px; height: 60px; position: fixed; left: 90px; bottom: 20px;">
 
-        <div class="reveal">
+            <div class="reveal">
 
-            <div class="slides">
+                <div class="slides">
 
-                <section>
-                    <h2><b>Minicurso Git/GitHub</b></h2><br>
+                    <section>
 
-                    <img src="images/logos/Git-logo.png"
-                        style="width: 455px; height: 190px; border:none; position: fixed; left: 0px;">
-                    <img src="images/logos/original.png"
-                        style="width: 224px; height: 224px; border:none; position: fixed; top: 115px; right: 250px;">
-                    <img src="images/logos/GitHub-logo.png"
-                        style="width: 250px; height: 110px; border:none; position: fixed; top: 165px; right: 0px;">
+                        <h2><b>Minicurso Git/GitHub</b></h2><br>
 
-                    <br><br><br><br><br><br><br>
-                    <p>
-                        <b>Diogo Gonçalves</b>
-                    </p>
-                    <p>
-                        <b>diogomachadogoncalves@gmail.com</b>
-                    </p>
-                </section>
+                        <img src="images/logos/Git-logo.png"
+                            style="width: 455px; height: 190px; border:none; position: fixed; left: 0px;">
+                        <img src="images/logos/original.png"
+                            style="width: 224px; height: 224px; border:none; position: fixed; top: 115px; right: 250px;">
+                        <img src="images/logos/GitHub-logo.png"
+                            style="width: 250px; height: 110px; border:none; position: fixed; top: 165px; right: 0px;">
 
-                <section>
-                    <blockquote>
-                        &ldquo;The end result was I decided I can write something better
-                        than anything out there in two weeks, and I was right.&rdquo;
-                    </blockquote>
-                    <p><b><a href="#/referencias">Linus Torvalds</a></b></p>
-                </section>
+                        <br><br><br><br><br><br><br>
+                        <p>
+                            <b>Diogo Gonçalves</b>
+                        </p>
+                        <p>
+                            <b>diogomachadogoncalves@gmail.com</b>
+                        </p>
 
-                <section>
-                    <h2>Quem usa Git?</h2>
-                    <img src="images/quem_usa_git.png"
-                        style="width: 926px; height: 171px; border: 1px solid #000000;">
-                    <p><b>Fonte: <a href="#/referencias">git-scm.com</a></b></p>
+                    </section>
 
-                </section>
+                    <section>
+                        <section>
+                            <h2>História</h2>
+                        </section>
+                        <section>
+                            <h2>Motivação</h2>
+                            <p>Linus Torvalds estava insatisfeito com o BitKeeper, ferramenta de
+                                controle de versão que ele utilizava para desenvolver o kernel do Linux.</p>
+                            <p>Após estudar as outras opções ...</p>
+                            <blockquote>
+                                &ldquo;The end result was I decided I can write something better
+                                than anything out there in two weeks, and I was right.&rdquo;
+                            </blockquote>
+                            <p><a href="https://www.youtube.com/watch?v=4XpnKHJAok8"><b>Tech Talk: Linus Torvalds on git    </b></a></p>
+                        </section>
 
-                <section>
-                    <h2>Branch</h2>
-                    <img src="images/branch.png"/>
-                </section>
+                        <section>
+                            <h2>Motivação</h2>
 
-                <section id="referencias">
-                    <h2>Referências</h2><br>
-                    <p><a href="https://www.youtube.com/watch?v=4XpnKHJAok8"><b>Tech Talk: Linus Torvalds on git</b></a></p>
-                    <p><a href="http://git-scm.com/"><b>git-scm.com</b></a></p>
-                </section>
+                            <p>Atualmente o desenvovimento do kernel Linux é auxiliado exclusivamente pelo Git.</p>
+                            <img src="images/linus_torvalds_github_profile.png"
+                                style="width: 598px; height: 390px; border: 1px solid #000000;">
+                        <p><b><a href="https://github.com/torvalds">github.com/torvalds</b></a></p>
+                        </section>
+                    </section>
+
+                    <section>
+                        <section>
+                            <h2>Mas por que eu usaria um controle de versão?</h2>
+                        </section>
+
+                        <section>
+                            <h2>Organizar o desenvolvimento de software</h2>
+                            <p>Gerenciar manualmente as versões do seu software não será mais
+                                necessário, o Git gerencia de uma forma mais organizada e eficiente
+                                para você.</p>
+                            <img src="images/copy_paste_example.png"
+                                style="width: 729px; height: 107px; border: 1px solid #000000;">
+                        </section>
+
+                        <section>
+                            <h2>Compartilhar projetos</h2>
+                            <p>Desenvolver projetos colaborativos nem sempre é fácil. Utilizar
+                                DropBox, pen drives ou afins para compartilhar código muitas vezes
+                                resulta em dor de cabeça.</p>
+
+                            <img src="images/collabocats.png"
+                                style="width: 597px; height: 320px;">
+                            <p><b> <a href="https://octodex.github.com/collabocats/">octodex.github.com </b></a></p>
+                        </section>
+
+                        <section>
+                            <h2>Compartilhar projetos</h2>
+                            <p>Estas ferramentas foram projetadas para fins genéricos, não oferecendo
+                                aspectos importantes para o desenvolvedor de software,
+                                como consistência entre as versões dos colaboradores e histórico de ações de cada um.</p>
+                            <p>Mas uma vez o Git cuida disso para você.</p>
+                            <img src="images/socialite.png"
+                                style="width: 597px; height: 300px;">
+                            <p><b> <a href="https://octodex.github.com/collabocats/">octodex.github.com </b></a></p>
+                        </section>
+
+                        <section>
+                            <h2>Independe da plataforma</h2>
+                            <p></p>
+                            <br>
+                            <img align=left src="images/microsoft_logo.jpg"
+                                style="width: 180px; height: 180px;">
+                            <img src="images/linux_logo.png"
+                                style="width: 197px; height: 219px;">
+                            <img align=right src="images/apple_logo.png"
+                                style="width: 170px; height: 206px;">
+                        </section>
+
+                        <section>
+                            <h2>O mercado utiliza!</h2>
+                            <p>Desenvolvimento profissional é feito assim :)</p>
+                            <img src="images/uso_de_um_controle_de_versao.jpg"
+                                style="width: 688px; height: 377px; border: 1px solid #000000;">
+                            <p><b> <a href="http://pt.slideshare.net/ZeroTurnaround/developer-productivityreport2013graphics-26271695">Rebellabs</b></a></p>
+                        </section>
+                        <section>
+                            <h2>O mercado utiliza!</h2>
+                            <p>E o Git está entre os mais populares.</p>
+                            <img src="images/git_vs_subversion.png"
+                                style="width: 750px; height: 445px;">
+                            <p><b> <a href="http://pt.slideshare.net/ZeroTurnaround/developer-productivityreport2013graphics-26271695">Rebellabs</b></a></p>
+                        </section>
+
+                        <section>
+                            <h2>Quem usa Git?</h2>
+                            <img src="images/quem_usa_git.png"
+                                style="width: 926px; height: 171px; border: 1px solid #000000;">
+                            <p><b><a href="http://git-scm.com/">git-scm.com</b></a></p>
+
+                        </section>
+
+                    </section>
+
+                    <section>
+                        <h2>Antes de começarmos ...</h2>
+                        <br>
+                        <h3>Instale o <a href="http://git-scm.com/downloads">Git</a></h3>
+                        <br>
+                        <h3>Cadastre-se no <a href="https://github.com/join">GitHub</a></h3>
+                    </section>
+
+                    <section>
+                        <h2>Branch</h2>
+                        <img src="images/branch.png"/>
+                    </section>
+
+                    <section id="referencias">
+                        <h2>Referências</h2><br>
+                    </section>
+
+                </div>
 
             </div>
 
-        </div>
+            <script src="lib/js/head.min.js"></script>
+            <script src="js/reveal.min.js"></script>
 
-        <script src="lib/js/head.min.js"></script>
-        <script src="js/reveal.min.js"></script>
+            <script>
 
-        <script>
+                Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: true,
+                    center: true,
 
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: true,
+                    theme: Reveal.getQueryHash().theme || 'custom' , // available themes are in /css/theme
+                    transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+                    slideNumber: Reveal.getQueryHash().slideNumber || 'true',
 
-                theme: Reveal.getQueryHash().theme || 'custom' , // available themes are in /css/theme
-                transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
-                slideNumber: Reveal.getQueryHash().slideNumber || 'true',
+                    dependencies: [
+                        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    ]
+                });
 
-                dependencies: [
-                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-                ]
-            });
+            </script>
 
-        </script>
-
-    </body>
-</html>
+        </body>
+    </html>
