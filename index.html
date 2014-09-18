@@ -259,7 +259,7 @@
                         </section>
 
                         <section>
-                            <h2>Iniciando um projeto</h2>
+                            <h3>Iniciando um projeto</h3>
                             <p>Para iniciar um repositório Git.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git init</p></pre>
                             <p>Este comando cria toda a estrutura que o Git necessita para funcionar. Os arquivos são criador na pasta oculta .git/</p>
@@ -267,7 +267,27 @@
                         </section>
 
                         <section>
-                            <h2></h2>
+                            <h3>Verificando o estado do projeto</h3>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git status</p></pre>
+                            <p>O <i>git status</i> exibe as alterações ocorridas no repositório desde o último commit.</p>
+                        </section>
+
+                        <section>
+                            <h3>Adicionando arquivos</h3>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git add arquivo<br>git add .<br>git add diretorio</p></pre>
+                            <p>O <i>git add</i> adiciona ou atualiza um arquivo da staged area.</p>
+                            <p>Ou seja, o comando informa ao Git para rastrear o referido arquivo. Caso
+                            o arquivo já esteja sob controle do Git, ele o atualiza.</p>
+                        </section>
+
+                        <section>
+                            <h3>Comparando alterações</h3>
+                            <p>O <i>git status</i> informa "quem" foi alterado, mas e se eu quiser saber
+                            exatamente "o que" foi alterado?</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git diff<br>git diff arquivo</p></pre>
+                            <p>O comando <i>git diff</i> compara o estado do repositório atualmente com o estado salvo na staged area</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git diff --cached</p></pre>
+                            <p>O comando <i>git diff --cached</i> compara o estado do repositório salvo na staged area com o estado do último commit</p>
                         </section>
                     </section>
 
