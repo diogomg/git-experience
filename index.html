@@ -275,20 +275,29 @@
                         <section>
                             <h3>Adicionando arquivos</h3>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git add arquivo<br>git add .<br>git add diretorio</p></pre>
-                            <p>O <i>git add</i> adiciona ou atualiza um arquivo da staged area.</p>
+                            <p>O <i>git add</i> adiciona ou atualiza um arquivo da staging area.</p>
                             <p>Ou seja, o comando informa ao Git para rastrear o referido arquivo. Caso
                             o arquivo já esteja sob controle do Git, ele o atualiza.</p>
+                        </section>
+
+                        <section>
+                            <h3>Confirmando mudanças</h3>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git commit<br>git commit -m "descrição do commit"</p></pre>
+                            <p><i>git commmit</i> transfere o estado do projeto salvo na staging area para o repositório do projeto.</p>
+                            <p>Simplificando, ele confirma as suas modificações, criando um novo estado ou "ponto de referência" para o seu projeto</p>
                         </section>
 
                         <section>
                             <h3>Comparando alterações</h3>
                             <p>O <i>git status</i> informa "quem" foi alterado, mas e se eu quiser saber
                             exatamente "o que" foi alterado?</p>
-                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git diff<br>git diff arquivo</p></pre>
-                            <p>O comando <i>git diff</i> compara o estado do repositório atualmente com o estado salvo na staged area</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git diff<br>git diff arquivo<br>git diff id_commit<br>git diff id_commit id_commit</p></pre>
+                            <p>O comando <i>git diff</i> compara o estado do repositório atualmente com o estado salvo na staging area</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git diff --cached</p></pre>
-                            <p>O comando <i>git diff --cached</i> compara o estado do repositório salvo na staged area com o estado do último commit</p>
+                            <p>O comando <i>git diff --cached</i> compara o estado do repositório salvo na staging area com o estado do último commit</p>
+                            <p>Pode-se também comparar as diferenças entre dois commits</p>
                         </section>
+
                     </section>
 
                     <section>
