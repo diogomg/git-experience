@@ -392,6 +392,26 @@
                             <p>A opção --cached remove o arquivo apenas do Git, sem esta opção
                             o comando remove o arquivo do seu computador também.</p>
                         </section>
+
+                        <section>
+                            <h3>Ignorando arquivos</h3>
+                            <p>Deixar todos os arquivos contidos na pasta do projeto sob controle
+                            do Git pode acabar dificultando o gerenciamento, e muitas vezes simplesmente
+                            não achamos necessário rastrear alterações de alguns arquivos
+                            (arquivos temporários, executaveis e etc...).</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">.gitignore</p></pre>
+                            <p>O arquivo oculto .gitignore é o responsável por dizer ao Git quais
+                            arquivos ele pode ignorar.</p>
+                        </section>
+
+                        <section>
+                            <h3>Ignorando arquivos</h3>
+                            <p>Basta adicionar uma <i>pattern</i> que o Git usará para ignorar os arquivos.
+                            Todos os arquivos que 'casarem' com as patterns serão ignorados. As patterns seguem
+                            o padrão utilizado nos sistemas unix/Linux.
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">#comentario<br>* qualquer caractere<br>! negação<br>/** subdiretório</p></pre>
+                            Exemplos de patterns e extensões podem ser geradas em <a href="https://www.gitignore.io/" target="_blank"><b>gitignore.io</b></a></p>
+                        </section>
                     </section>
 
                     <section>
