@@ -177,7 +177,34 @@
                             <img src="images/quem_usa_git.png"
                                 style="width: 926px; height: 171px; border: 1px solid #000000;">
                             <p><b><a href="http://git-scm.com/" target="_blank">git-scm.com</b></a></p>
+                        </section>
 
+                        <section>
+                            <h3>Vagas de emprego</h3><br>
+
+                            <div style="width: 610px; height:100px;">
+                                <img src="images/vaga_apple.png"
+                                    style="width: 602px; height: 30px; border: 1px solid #000000;">
+                                <p>
+                                    <b><a href="https://jobs.apple.com/us/search?job=35817618&openJobId=35817618&board_id=39968#&openJobId=35817618" target="_blank">Apple</b></a>
+                                </p>
+                            </div>
+
+                            <div style="width: 650px; height:100px; float: right;">
+                                <img src="images/vaga_blizzard.png"
+                                    style="width: 647px; height: 33px; border: 1px solid #000000;">
+                                <p>
+                                    <b><a href="http://us.blizzard.com/pt-br/company/careers/posting.html?id=14000J4" target="_blank">Blizzard</b></a>
+                                </p>
+                            </div>
+
+                            <div style="width: 620px; height:100px;">
+                                <img src="images/vaga_android.png"
+                                    style="width: 610px; height: 36px; border: 1px solid #000000;">
+                                <p>
+                                    <b><a href="https://www.google.com/about/careers/search#!t=jo&jid=40055001&" target="_blank">Android/Google</b></a>
+                                </p>
+                            </div>
                         </section>
                     </section>
 
@@ -313,11 +340,50 @@
                             <p>A partir do código associado aos commits você pode voltar
                             para um determinado 'estado' do projeto</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git checkout id_commit</p></pre>
-                            <img src="images/checkout_commit.png"
-                                style="width: 460px; height: 237px;">
+                            <img src="images/checkout_commit.png" style="width: 460px; height: 237px;">
                             <p>O comando <i>git checkout</i> também redireciona arquivos e <i>braches</i></p>
                         </section>
 
+                        <section>
+                            <h3>Desfazendo modificações</h3>
+                            <h4>Se eu me arrepender das minhas últimas alterações</h4>
+                            <p>Você pode descartar mudanças no seu <i>working directory</i> voltando o estado
+                            dos seus arquivos para o último salvo na staging area.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git checkout arquivo<br>git checkout .</p></pre>
+                            <img src="images/checkout_file.png" style="width: 619px; height: 120px;">
+                        </section>
+
+                        <section>
+                            <h3>Desfazendo modificações</h3>
+                            <h4>E se eu já adicionei as alterações na staging area??</h4>
+                            <p>O comando <i>git reset HEAD</i> devolve as modificações da staging area para o workind directory.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git reset HEAD arquivo<br>git reset HEAD .</p></pre>
+                            <img src="images/reset_HEAD.png" style="width: 429px; height: 105px;">
+                            <img src="images/after_reset.png" style="width: 618px; height: 180px;">
+                        </section>
+
+                        <section>
+                            <h3>Desfazendo modificações</h3>
+                            <h4>E se eu já <i>commitei</i> minhas alterações??</h4>
+                            <p>Há duas maneiras diferentes de se fazer isto,
+                            você irá escolher uma ou outra dependendo do resultado que você espera</p>
+                        </section>
+
+                        <section>
+                            <h3>Desfazendo modificações</h3>
+                            <p>O comando <i>git reset</i> faz o projeto/arquivo voltar para um
+                            estado anterior.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git reset id_commit<br>git reset arquivo<br>git reset --hard id_commit</p></pre>
+                            <img src="images/reset.png" style="width: 419px; height: 107px;">
+                        </section>
+
+                        <section>
+                            <h3><strike>Desfazendo</strike> Revertendo modificações</h3>
+                            <p>O comando <i>git revert</i> não desfaz um commit, mas cria outro
+                            removendo a alteração anterior.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git revert id_commit</p></pre>
+                            <img src="images/revert.png" style="width: 409px; height: 116px;">
+                        </section>
                     </section>
 
                     <section>
