@@ -285,15 +285,8 @@
                             <h3>Confirmando mudanças</h3>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git commit<br>git commit -m "descrição do commit"<br>git commit -am "descrição do commit"</p></pre>
                             <p><i>git commit</i> transfere o estado do projeto salvo na staging area para o repositório do projeto.</p>
-                            <p>Simplificando, ele confirma as suas modificações, criando um novo estado ou "ponto de referência" para o seu projeto</p>
-                        </section>
-
-                        <section>
-                            <h3>histórico de alterações</h3>
-                            <p>O comando <i>git log</i> exibe o histórico de commits do projeto</p>
-                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git log<br>git log --oneline<br>git log -p<br>git log --graph</p></pre>
-                            <img src="images/log.png"
-                                style="width: 471px; height: 345px; border: 1px solid #000000;">
+                            <p>Simplificando, ele confirma as suas modificações, criando um novo estado ou "ponto de referência" para o seu projeto. Todo commit é associado à um <i>checksum</i> para poder ser
+                            referenciado posteriormente.</p>
                         </section>
 
                         <section>
@@ -306,6 +299,25 @@
                             <p>O comando <i>git diff --cached</i> compara o estado do repositório salvo na staging area com o estado do último commit</p>
                             <p>Pode-se também comparar as diferenças entre dois commits</p>
                         </section>
+
+                        <section>
+                            <h3>histórico de alterações</h3>
+                            <p>O comando <i>git log</i> exibe o histórico de commits do projeto</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git log<br>git log --oneline<br>git log -p<br>git log --graph</p></pre>
+                            <img src="images/log.png"
+                                style="width: 471px; height: 345px; border: 1px solid #000000;">
+                        </section>
+
+                        <section>
+                            <h3>'Passeando' pelo projeto</h3>
+                            <p>A partir do código associado aos commits você pode voltar
+                            para um determinado 'estado' do projeto</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git checkout id_commit</p></pre>
+                            <img src="images/checkout_commit.png"
+                                style="width: 460px; height: 237px;">
+                            <p>O comando <i>git checkout</i> também redireciona arquivos e <i>braches</i></p>
+                        </section>
+
                     </section>
 
                     <section>
