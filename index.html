@@ -356,7 +356,7 @@
                         <section>
                             <h3>Desfazendo modificações</h3>
                             <h4>E se eu já adicionei as alterações na staging area??</h4>
-                            <p>O comando <i>git reset HEAD</i> devolve as modificações da staging area para o workind directory.</p>
+                            <p>O comando <i>git reset HEAD</i> devolve as modificações da staging area para o working directory.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git reset HEAD arquivo<br>git reset HEAD .</p></pre>
                             <img src="images/reset_HEAD.png" style="width: 429px; height: 105px;">
                             <img src="images/after_reset.png" style="width: 618px; height: 180px;">
@@ -383,6 +383,14 @@
                             removendo a alteração anterior.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git revert id_commit</p></pre>
                             <img src="images/revert.png" style="width: 409px; height: 116px;">
+                        </section>
+
+                        <section>
+                            <h3>Removendo arquivos</h3>
+                            <p>O comando <i>git rm</i> remove um arquivo do seu projeto.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git rm arquivo<br>git rm --cached arquivo</p></pre>
+                            <p>A opção --cached remove o arquivo apenas do Git, sem esta opção
+                            o comando remove o arquivo do seu computador também.</p>
                         </section>
                     </section>
 
