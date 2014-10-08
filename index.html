@@ -448,6 +448,49 @@
                             <img align=left src="images/before_checkout_branch.png" style="width: 50%; height: 50%;">
                             <img align=right src="images/after_checkout_branch.png" style="width: 50%; height: 50%;">
                         </section>
+
+                        <section>
+                            <h2>Unindo ramificações</h2>
+                            <p>Após desenvolvedor uma funcionalidade separada do fluxo principal, muitas
+                            vezes é interessante incorporar as modifições no branch master.
+                            O comando <i>git merge</i> uni dois branches novamente, combinando
+                            as funcionalides do branch independente com o branch atual.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git merge nome_branch</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Unindo ramificações</h2>
+                            <p>Quando não há commits posteriores à criação do branch, a incorporação das
+                            funcionalides ocorre sem nenhum problema.</p>
+                            <img align=left src="images/before_simple_merge.png" style="width: 50%; height: 50%;">
+                            <img align=right src="images/after_simple_merge.png" style="width: 50%; height: 50%;">
+                        </section>
+
+                        <section>
+                            <h2>Unindo ramificações</h2>
+                            <p>Porém, quando os branches divergem, o Git precisa que combinar seus conteúdos.</p>
+                            <img align=left src="images/before_3way_merge.png" style="width: 40%; height: 40%;">
+                            <img align=right src="images/after_3way_merge.png" style="width: 53%; height: 53%;">
+                        </section>
+
+                        <section>
+                            <h2>Unindo ramificações</h2>
+                            <p>Algumas vezes o Git pode não saber que modificações escolher quando dois
+                            branches alteram o mesmo trecho de código.</p>
+                            <img src="images/conflict.png" style="width: 100%; height: 100%;">
+                        </section>
+
+                        <section>
+                            <h2>Unindo ramificações</h2>
+                            <p>Para informar o trecho conflitante, o Git sinaliza as linhas
+                            do arquivo com algumas marcações(<<<<<<<, ======= e >>>>>>>),
+                            para corrigir o conflito e confirmar o merge, basta apagar as
+                            linhas desnecessárias do arquivo, mantendo conteúdo escolhido,
+                            e efetuar um novo commit. Este é basicamente o único trabalho
+                            manual que o Git necessita</p>
+                            <img src="images/solving_conflict.png" style="width: 100%; height: 100%;">
+                            <p><b>Fonte: <a href="http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging" target="_blank">git-scm/book</b></a></p>
+                        </section>
                     </section>
 
                     <section>
