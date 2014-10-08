@@ -130,7 +130,7 @@
                                 DropBox, pen drives ou afins para compartilhar código muitas vezes
                                 resulta em dor de cabeça.</p>
 
-                            <img src="images/collabocats.png"
+                            <img src="images/octocat/collabocats.png"
                                 style="width: 597px; height: 320px;">
                         </section>
 
@@ -141,7 +141,7 @@
                                 como histórico de ações de cada colaborador, consistência entre as versões dos integrantes
                                 e fácil identificação e correção de bugs.</p>
                                 <p>Mais uma vez o Git cuida disso para você.</p>
-                            <img src="images/socialite.png"
+                            <img src="images/octocat/socialite.png"
                                 style="width: 597px; height: 300px;">
                         </section>
 
@@ -149,11 +149,11 @@
                             <h2>Independe da plataforma</h2>
                             <p></p>
                             <br>
-                            <img align=left src="images/microsoft_logo.jpg"
+                            <img align=left src="images/logos/microsoft_logo.jpg"
                                 style="width: 180px; height: 180px;">
-                            <img src="images/linux_logo.png"
+                            <img src="images/logos/linux_logo.png"
                                 style="width: 197px; height: 219px;">
-                            <img align=right src="images/apple_logo.png"
+                            <img align=right src="images/logos/apple_logo.png"
                                 style="width: 170px; height: 206px;">
                         </section>
 
@@ -263,10 +263,9 @@
                     <section>
                         <section>
                             <h2>Vamos à pratica!</h2>
-                            <img align=center src="images/baracktocat.jpg"
+                            <img align=center src="images/octocat/baracktocat.jpg"
                                 style="width: 537px; height: 537px; border: 1px solid #000000;">
                         </section>
-
                         <section>
                             <h2>Consultas rápidas</h2>
                             <p>Caso não se lembre de algum comando no decorrer do minicurso ou queira uma explicação mais detalhada ...</p>
@@ -285,9 +284,15 @@
                             <p>Verificar configurações atuais</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git config --list</p></pre>
                         </section>
+                    </section>
+
+                    <section>
+                        <section>
+                            <h2>Trabalhando localmente</h2>
+                        </section>
 
                         <section>
-                            <h3>Iniciando um projeto</h3>
+                            <h2>Iniciando um projeto</h2>
                             <p>Para iniciar um repositório Git.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git init</p></pre>
                             <p>Este comando cria toda a estrutura que o Git necessita para funcionar. Os arquivos são criador na pasta oculta .git/</p>
@@ -295,13 +300,13 @@
                         </section>
 
                         <section>
-                            <h3>Verificando o estado do projeto</h3>
+                            <h2>Verificando o estado do projeto</h2>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git status</p></pre>
                             <p>O <i>git status</i> exibe as alterações ocorridas no repositório desde o último commit.</p>
                         </section>
 
                         <section>
-                            <h3>Adicionando arquivos</h3>
+                            <h2>Adicionando arquivos</h2>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git add arquivo<br>git add .<br>git add diretorio</p></pre>
                             <p>O <i>git add</i> adiciona ou atualiza um arquivo da staging area.</p>
                             <p>Ou seja, o comando informa ao Git para rastrear o referido arquivo. Caso
@@ -309,7 +314,7 @@
                         </section>
 
                         <section>
-                            <h3>Confirmando mudanças</h3>
+                            <h2>Confirmando mudanças</h2>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git commit<br>git commit -m "descrição do commit"<br>git commit -am "descrição do commit"</p></pre>
                             <p><i>git commit</i> transfere o estado do projeto salvo na staging area para o repositório do projeto.</p>
                             <p>Simplificando, ele confirma as suas modificações, criando um novo estado ou "ponto de referência" para o seu projeto. Todo commit é associado à um <i>checksum</i> para poder ser
@@ -317,7 +322,7 @@
                         </section>
 
                         <section>
-                            <h3>Comparando alterações</h3>
+                            <h2>Comparando alterações</h2>
                             <p>O <i>git status</i> informa "quem" foi alterado, mas e se eu quiser saber
                             exatamente "o que" foi alterado?</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git diff<br>git diff arquivo<br>git diff id_commit<br>git diff id_commit id_commit</p></pre>
@@ -328,7 +333,7 @@
                         </section>
 
                         <section>
-                            <h3>histórico de alterações</h3>
+                            <h2>histórico de alterações</h2>
                             <p>O comando <i>git log</i> exibe o histórico de commits do projeto</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git log<br>git log --oneline<br>git log -p<br>git log --graph</p></pre>
                             <img src="images/log.png"
@@ -336,17 +341,17 @@
                         </section>
 
                         <section>
-                            <h3>'Passeando' pelo projeto</h3>
+                            <h2>'Passeando' pelo projeto</h2>
                             <p>A partir do código associado aos commits você pode voltar
                             para um determinado 'estado' do projeto</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git checkout id_commit</p></pre>
                             <img src="images/checkout_commit.png" style="width: 460px; height: 237px;">
-                            <p>O comando <i>git checkout</i> também redireciona arquivos e <i>braches</i></p>
+                            <p>O comando <i>git checkout</i> também redireciona arquivos e <i>branches</i></p>
                         </section>
 
                         <section>
-                            <h3>Desfazendo modificações</h3>
-                            <h4>Se eu me arrepender das minhas últimas alterações</h4>
+                            <h2>Desfazendo modificações</h2>
+                            <h3>Se eu me arrepender das minhas últimas alterações</h3>
                             <p>Você pode descartar mudanças no seu <i>working directory</i> voltando o estado
                             dos seus arquivos para o último salvo na staging area.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git checkout arquivo<br>git checkout .</p></pre>
@@ -354,8 +359,8 @@
                         </section>
 
                         <section>
-                            <h3>Desfazendo modificações</h3>
-                            <h4>E se eu já adicionei as alterações na staging area??</h4>
+                            <h2>Desfazendo modificações</h2>
+                            <h3>E se eu já adicionei as alterações na staging area??</h3>
                             <p>O comando <i>git reset HEAD</i> devolve as modificações da staging area para o working directory.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git reset HEAD arquivo<br>git reset HEAD .</p></pre>
                             <img src="images/reset_HEAD.png" style="width: 429px; height: 105px;">
@@ -363,14 +368,14 @@
                         </section>
 
                         <section>
-                            <h3>Desfazendo modificações</h3>
-                            <h4>E se eu já <i>commitei</i> minhas alterações??</h4>
+                            <h2>Desfazendo modificações</h2>
+                            <h3>E se eu já <i>commitei</i> minhas alterações??</h3>
                             <p>Há duas maneiras diferentes de se fazer isto,
                             você irá escolher uma ou outra dependendo do resultado que você espera</p>
                         </section>
 
                         <section>
-                            <h3>Desfazendo modificações</h3>
+                            <h2>Desfazendo modificações</h2>
                             <p>O comando <i>git reset</i> faz o projeto/arquivo voltar para um
                             estado anterior.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git reset id_commit<br>git reset arquivo<br>git reset --hard id_commit</p></pre>
@@ -378,7 +383,7 @@
                         </section>
 
                         <section>
-                            <h3><strike>Desfazendo</strike> Revertendo modificações</h3>
+                            <h2><strike>Desfazendo</strike> Revertendo modificações</h2>
                             <p>O comando <i>git revert</i> não desfaz um commit, mas cria outro
                             removendo a alteração anterior.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git revert id_commit</p></pre>
@@ -386,7 +391,7 @@
                         </section>
 
                         <section>
-                            <h3>Removendo arquivos</h3>
+                            <h2>Removendo arquivos</h2>
                             <p>O comando <i>git rm</i> remove um arquivo do seu projeto.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git rm arquivo<br>git rm --cached arquivo</p></pre>
                             <p>A opção --cached remove o arquivo apenas do Git, sem esta opção
@@ -394,7 +399,7 @@
                         </section>
 
                         <section>
-                            <h3>Ignorando arquivos</h3>
+                            <h2>Ignorando arquivos</h2>
                             <p>Deixar todos os arquivos contidos na pasta do projeto sob controle
                             do Git pode acabar dificultando o gerenciamento, e muitas vezes simplesmente
                             não achamos necessário rastrear alterações de alguns arquivos
@@ -405,12 +410,50 @@
                         </section>
 
                         <section>
-                            <h3>Ignorando arquivos</h3>
+                            <h2>Ignorando arquivos</h2>
                             <p>Basta adicionar uma <i>pattern</i> que o Git usará para ignorar os arquivos.
                             Todos os arquivos que 'casarem' com as patterns serão ignorados. As patterns seguem
                             o padrão utilizado nos sistemas unix/Linux.
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">#comentario<br>* qualquer caractere<br>! negação<br>/** subdiretório</p></pre>
                             Exemplos de patterns e extensões podem ser geradas em <a href="https://www.gitignore.io/" target="_blank"><b>gitignore.io</b></a></p>
+                        </section>
+                    </section>
+
+                    <section>
+                        <section>
+                            <h2>Ramificando a produção de software</h2>
+                            <img src="images/branches.png" style="width: 719px; height: 231px;">
+                        </section>
+
+                        <section>
+                            <h2>Ramificando a produção de software</h2>
+                            <p>O Git permite criar uma linha independente de desenvolvimento
+                            no seu projeto. Isto permite alterações em partes especificas do software
+                            sem comprometer o restante do projeto.</p>
+                            <img src="images/branch_example.png" style="width: 50%; height: 50%;">
+                        </section>
+
+                        <section>
+                            <h2>Ramificando a produção de software</h2>
+                            <p>O comando <i>git branch</i> cria um novo branch a partir do último commit.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git branch nome_branch</p></pre>
+                            <img src="images/after_branch.png" style="width: 50%; height: 50%;">
+                        </section>
+
+                        <section>
+                            <h2>Navegando entre branches</h2>
+                            <p>Além de visualizar commits antigos, o <i>git checkout</i>
+                            também é o responsável por alterar o branch corrente.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git checkout nome_branch</p></pre>
+                            <img align=left src="images/before_checkout_branch.png" style="width: 50%; height: 50%;">
+                            <img align=right src="images/after_checkout_branch.png" style="width: 50%; height: 50%;">
+                        </section>
+                    </section>
+
+                    <section>
+                        <section>
+                            <h2>Trabalhando com repositórios remotos</h2>
+                            <img src="images/octocat/socialite.png" style="width: 597px; height: 300px;">
                         </section>
                     </section>
 
@@ -432,7 +475,10 @@
                     </section>
                     <section id="referencias">
                         <h2>Referências</h2><br>
-                        <p><b><a href="https://octodex.github.com/" target="_blank">octodex.github.com </b></a></p>
+                        <p><b><a href="https://octodex.github.com/" target="_blank">octodex.github.com</b></a></p>
+                        <p><b><a href="https://www.atlassian.com/git/tutorials/" target="_blank">atlassian.com</b></a></p>
+                        <p><b><a href="http://git-scm.com/doc" target="_blank">git-scm.com</b></a></p>
+                        <p><b><a href="http://slides.com/borjagorrizhernando/git-in-context#/" target="_blank">Borja Gorriz Hernando</b></a></p>
                     </section>
 
                 </div>
