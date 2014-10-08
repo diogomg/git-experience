@@ -85,7 +85,7 @@
                         <section>
                             <h2>Motivação</h2>
 
-                            <p>Atualmente o desenvovimento do kernel Linux é auxiliado exclusivamente pelo Git.</p>
+                            <p>Atualmente o desenvolvimento do kernel Linux é auxiliado exclusivamente pelo Git.</p>
                             <img src="images/linus_torvalds_github_profile.png"
                                 style="width: 598px; height: 390px; border: 1px solid #000000;">
                         <p><b><a href="https://github.com/torvalds" target="_blank">github.com/torvalds</b></a></p>
@@ -231,7 +231,7 @@
 
                         <section>
                             <!--Baseado em http://slides.com/diogogoncalves/git-in-context#/2-->
-                            <h2>SCV Distribuido</h2>
+                            <h2>SCV Distribuído</h2>
                             <p>No Git, todos os clientes possuem uma cópia completa do repositório remoto.</p>
                             <div style="width: 460px; height:300px; position: absolute; left: 0px;">
                                 <p align=center>Centralizado</p>
@@ -307,7 +307,7 @@
 
                         <section>
                             <h2>Adicionando arquivos</h2>
-                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git add arquivo<br>git add .<br>git add diretorio</p></pre>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git add arquivo<br>git add .<br>git add diretório</p></pre>
                             <p>O <i>git add</i> adiciona ou atualiza um arquivo da staging area.</p>
                             <p>Ou seja, o comando informa ao Git para rastrear o referido arquivo. Caso
                             o arquivo já esteja sob controle do Git, ele o atualiza.</p>
@@ -403,7 +403,7 @@
                             <p>Deixar todos os arquivos contidos na pasta do projeto sob controle
                             do Git pode acabar dificultando o gerenciamento, e muitas vezes simplesmente
                             não achamos necessário rastrear alterações de alguns arquivos
-                            (arquivos temporários, executaveis e etc...).</p>
+                            (arquivos temporários, executáveis e etc...).</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">.gitignore</p></pre>
                             <p>O arquivo oculto .gitignore é o responsável por dizer ao Git quais
                             arquivos ele pode ignorar.</p>
@@ -452,16 +452,16 @@
                         <section>
                             <h2>Unindo ramificações</h2>
                             <p>Após desenvolvedor uma funcionalidade separada do fluxo principal, muitas
-                            vezes é interessante incorporar as modifições no branch master.
+                            vezes é interessante incorporar as modificações no branch master.
                             O comando <i>git merge</i> uni dois branches novamente, combinando
-                            as funcionalides do branch independente com o branch atual.</p>
+                            as funcionalidades do branch independente com o branch atual.</p>
                             <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git merge nome_branch</p></pre>
                         </section>
 
                         <section>
                             <h2>Unindo ramificações</h2>
                             <p>Quando não há commits posteriores à criação do branch, a incorporação das
-                            funcionalides ocorre sem nenhum problema.</p>
+                            funcionalidades ocorre sem nenhum problema.</p>
                             <img align=left src="images/before_simple_merge.png" style="width: 50%; height: 50%;">
                             <img align=right src="images/after_simple_merge.png" style="width: 50%; height: 50%;">
                         </section>
@@ -530,7 +530,7 @@
 
                         <section>
                             <h2>Trabalhando com repositórios remotos</h2>
-                            <p>Mas daremos foco ao case mais bem sucessido.</p>
+                            <p>Mas daremos foco ao case mais bem sucedido.</p>
                             <div style="width: 900px; height:900px;">
                                 <img align=left src="images/octocat/daftpunktocat-thomas.gif" style="width: 50%; height: 50%;">
                                 <img align=right src="images/logos/GitHub-logo.png" style="position: relative; width: 40%; height: 25%; top: 10%;">
@@ -574,11 +574,11 @@
 
                         <section>
                             <h2>Criando versões</h2>
-                            <p>Conforme incluimos funcionalidades no sistema, podemos definir pontos relevantes
+                            <p>Conforme incluímos funcionalidades no sistema, podemos definir pontos relevantes
                             no software, que geralmente, marcam uma versão de lançamento.</p>
                             <p>O comando <i>git tag</i> inclui um rótulo à um determinado commit para
                             que este possa ser referenciado mais facilmente.</p>
-                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git tag -a versao -m "descricao"</p></pre>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git tag -a versao -m "descrição"</p></pre>
                         </section>
 
                         <section>
