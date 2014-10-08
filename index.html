@@ -491,12 +491,118 @@
                             <img src="images/solving_conflict.png" style="width: 100%; height: 100%;">
                             <p><b>Fonte: <a href="http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging" target="_blank">git-scm/book</b></a></p>
                         </section>
+
+                        <section>
+                            <h2>Deletando ramificações</h2>
+                            <p>Após incorporar um <i>branch</i> à outro, pode não
+                            ser mais necessário manter uma ramificação. Para deletar um branch
+                            utiliza-se do parâmetro -d juntamente com o comando <i>git branch</i></p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git branch -d nome_branch</p></pre>
+                        </section>
                     </section>
 
                     <section>
                         <section>
                             <h2>Trabalhando com repositórios remotos</h2>
                             <img src="images/octocat/socialite.png" style="width: 597px; height: 300px;">
+                        </section>
+
+                        <section>
+                            <h2>Trabalhando com repositórios remotos</h2>
+                            <p>
+                                Muitas vezes(para não dizer na maioria) não desenvolvemos projetos
+                                sozinhos. Uma forma de facilitar o compartilhamento de projetos é
+                                disponibiliza-lo em um local de fácil acesso entre os integrantes da equipe,
+                                além de permitir que o repositório possua sempre a versão mais atualizada
+                                dentre os integrantes.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2>Trabalhando com repositórios remotos</h2>
+                            <p>
+                                Muitas empresas possuem servidores dedicados para suas equipes,
+                                mas há algumas soluções no mercados que cumprem a mesma função.
+                            </p>
+                            <img align=left src="images/logos/bitbucket_logo.png" style="width: 50%; height: 50%;">
+                            <img align=right src="images/logos/gitlab_logo.png" style="width: 50%; height: 50%;">
+                        </section>
+
+                        <section>
+                            <h2>Trabalhando com repositórios remotos</h2>
+                            <p>Mas daremos foco ao case mais bem sucessido.</p>
+                            <div style="width: 900px; height:900px;">
+                                <img align=left src="images/octocat/daftpunktocat-thomas.gif" style="width: 50%; height: 50%;">
+                                <img align=right src="images/logos/GitHub-logo.png" style="position: relative; width: 40%; height: 25%; top: 10%;">
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2>Referenciando um repositório remoto</h2>
+                            <p>O comando <i>git remote add</i> é o responsável por referenciar um repositório remoto em um repositório local já existente</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git remote add origin URL</p></pre>
+                            <p>O comando <i>git remote rm</i> é utilizado para apagar uma referência à um repositório remoto. Util quando se deseja substituir o local onde o remoto está hospedado.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git remote rm origin</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Copiando um repositório remoto</h2>
+                            <p>Quando se deseja iniciar/continuar um projeto já existente, utiliza-se do
+                            <i>git clone</i> para copiar todo um repositório remoto para uma máquina local.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git clone URL</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Enviando conteúdo para o remoto</h2>
+                            <p>Utiliza-se o <i>git push</i> para enviar as modificações para o repositório remoto.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git push<br>git push origin master<br>git push origin nome_branch</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Baixando atualizações do remoto</h2>
+                            <p>O Git disponibiliza duas maneiras de baixar as atualizações
+                            de um repositório remoto. O comando <i>git fetch</i> baixa as atualizações mas não as incorpora ao repositório local.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git fetch<br>git fetch origin master<br>git fetch origin nome_branch</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Baixando atualizações do remoto</h2>
+                            <p>Outra maneira é utilizando o comando <i>git pull</i>, que baixa e
+                            incorpora as modificações no repositório local. Equivale à um git fetch seguido de uma git merge.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git pull<br>git pull origin master<br>git pull origin nome_branch</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Criando versões</h2>
+                            <p>Conforme incluimos funcionalidades no sistema, podemos definir pontos relevantes
+                            no software, que geralmente, marcam uma versão de lançamento.</p>
+                            <p>O comando <i>git tag</i> inclui um rótulo à um determinado commit para
+                            que este possa ser referenciado mais facilmente.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git tag -a versao -m "descricao"</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Criando versões</h2>
+                            <p>Para visualizar as versões ja criadas, utilize o comando <i>git tag</i> sem parâmetros.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git tag</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Criando versões</h2>
+                            <p>Para visualizar as versões ja criadas, utilize o comando <i>git tag</i> sem parâmetros.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git tag</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Criando versões</h2>
+                            <p>Para visualizar o conteúdo de uma versão lançada, utilize o comando <i>git checkout</i>.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git checkout nome_tag</p></pre>
+                        </section>
+
+                        <section>
+                            <h2>Criando versões</h2>
+                            <p>Para enviar os rótulos criados para o repositório remoto, utilize o parâmetro --tags no comando <i>git push</i>.</p>
+                            <pre style="background-color: #4C4C4C;"><p style="color: white; font-size: 150%;">git push origin --tags</p></pre>
                         </section>
                     </section>
 
@@ -512,9 +618,6 @@
                             <p><a href="https://www.atlassian.com/git/tutorials/" target="_blank"><b>atlassian.com/git/tutorials</b></a></p>
                         </section>
 
-                        <section>
-                            <h2>Conteúdo protegido por copyright</h2>
-                        </section>
                     </section>
                     <section id="referencias">
                         <h2>Referências</h2><br>
